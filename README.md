@@ -5,13 +5,15 @@ Coding challenge by Kauan Schuani and Evgeni Uschakov: Tournament of bots playin
 
 Conditions for writing: 
 
-            -Use our generated basic structure of the game
+- Use our generated basic structure of the game
             
-            -Upload your single Botclass only (Write your code into FirstBot.java)
+- Upload your single Botclass only (Write your code into FirstBot.java)
             
-            -Your Bot has the ability to see the opponent Cards (opponents cards will be transported to your code as a parameter of the data type List<Karte>)
-            
-            -You are able to place a card only through the method "this.legeKarte(index);"
+- Your Bot has the ability to see the opponent Cards (opponents cards will be transported to your code as a parameter of the data type List<Karte>)
+           
+- You are able to place a card only through the method "this.legeKarte(index);"
+
+- every card your bot places will be checked by a cheatdetector. Don't get the wrong idea...
             
             -PS: you are allowed to have fun while programming :)
             
