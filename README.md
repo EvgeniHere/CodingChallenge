@@ -16,7 +16,8 @@ Conditions for writing:
 - every card your bot places will be checked by a cheatdetector. Don't get the wrong idea...
             
 - PS: you are allowed to have fun while programming :)
-            
+   
+         
 General gamerules: 
 
 - you can only place one card. it has to be either the same color or the same number as the card placed before you.
