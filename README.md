@@ -1,0 +1,22 @@
+# CodingChallenge
+Bots playing Cards
+
+Coding challenge by Kauan Schuani and Evgeni Uschakov: Tournament of bots playing cards. Upload your selfwritten bot to get involved and let him play against other bots. Hope to see you in the ring!
+
+Conditions: 
+
+            -Use our generated basic structure of the game
+            
+            -Upload your single Botclass only
+            
+            -Your Bot has the ability to see the opponent Cards (opponents cards will be transported to your code as a parameter of the data type List<Karte>)
+            
+            -You are able to place a card only through the method "CheatProtection.check(yourBot, indexOfTheCard);"
+            
+            -PS: you are allowed to have fun while programming :)
+            
+Gamerules: 
+
+            - you can only place one card. it has to be either the same color or the same number as the card placed before you.
+            - every turn youll get a card. at the beginning every bot gets 3 by default. 
+            - if you are not able to place a card because you dont have a card that fits, you have to take a new card. if there is no card left to take, you lost.
