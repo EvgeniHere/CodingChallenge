@@ -3,7 +3,7 @@ Bots playing Cards
 
 Coding challenge by Kauan Schuani and Evgeni Uschakov: Tournament of bots playing cards. Upload your selfwritten bot to get involved and let him play against other bots. Hope to see you in the ring!
 
-Conditions: 
+Conditions for writing: 
 
             -Use our generated basic structure of the game
             
@@ -15,7 +15,7 @@ Conditions:
             
             -PS: you are allowed to have fun while programming :)
             
-Gamerules: 
+General gamerules: 
 
             - you can only place one card. it has to be either the same color or the same number as the card placed before you.
             - every turn youll get a card. at the beginning every bot gets 3 by default. 
