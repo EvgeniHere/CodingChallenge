@@ -11,7 +11,7 @@ Conditions:
             
             -Your Bot has the ability to see the opponent Cards (opponents cards will be transported to your code as a parameter of the data type List<Karte>)
             
-            -You are able to place a card only through the method "CheatProtection.check(yourBot, indexOfTheCard);"
+            -You are able to place a card only through the method "this.legeKarte(index);"
             
             -PS: you are allowed to have fun while programming :)
             
