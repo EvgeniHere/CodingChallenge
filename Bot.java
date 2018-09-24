@@ -4,6 +4,7 @@ import java.util.List;
 public class Bot {
     List<Karte> karten;
     String name;
+    boolean gelegt;
     
     public Bot(int anzahlKarten, String name) {
         karten = new ArrayList<>();
