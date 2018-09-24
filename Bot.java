@@ -40,10 +40,12 @@ public class Bot {
     }
 
     public boolean hatGelegt() {
-         if (gelegt) {
-             gelegt = true;
-             return true;
-         }
+        if (gelegt) {
+            gelegt = false;
+            return true;
+        } else {
+            return false;
+        }
     }
     
     public int getKartenAnzahl() {
