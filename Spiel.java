@@ -7,7 +7,7 @@ public class Spiel {
     static Kartenstapel ks;
     static SecondBot kBot;
     static FirstBot eBot;
-    static Bot winner = null;
+    static Bot winner;
     
     public Spiel(int kartenAnzahl) {
         ks = new Kartenstapel(kartenAnzahl);
@@ -35,12 +35,14 @@ public class Spiel {
         } else {
             kBot.legeKarte(eBot.getKarten());
         }
-        
-        if (!isFinished()) {
-            if (bot.equals(eBot)) {
-                nextTurn(kBot);
-            } else {
-                nextTurn(eBot);
+
+        if (bot.hatGelegt()) {
+            if (!isFinished()) {
+                if (bot.equals(eBot)) {
+                    nextTurn(kBot);
+                } else {
+                    nextTurn(eBot);
+                }
             }
         }
     }
