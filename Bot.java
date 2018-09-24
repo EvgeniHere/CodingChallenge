@@ -13,10 +13,6 @@ public class Bot {
     public List<Karte> getKarten() {
         return karten;
     }
-    
-    public void setName(String name) {
-        this.name = name;
-    }
     public String getName() {
         return name;
     }
@@ -40,6 +36,11 @@ public class Bot {
     
     public void legeKarte(int num) {
         CheatProtection.check(this, num);
+        gelegt = true;
+    }
+
+    public boolean wurdeGelegt() {
+         return gelegt;
     }
     
     public int getKartenAnzahl() {
