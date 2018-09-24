@@ -6,7 +6,8 @@ public class CheatProtection {
             Spielfeld.legeKarte(bot.getKarteAt(index));
             bot.getKarten().remove(index);
         } else {
-            System.out.println("Cheat detected!!!");
+            System.out.println("Cheat detected!");
+            System.out.println("Your Card does not fit to the current one on the field!");
             System.exit(0);
         }
     }
