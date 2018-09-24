@@ -14,6 +14,7 @@ public class Bot {
     public List<Karte> getKarten() {
         return karten;
     }
+
     public String getName() {
         return name;
     }
