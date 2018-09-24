@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bot {
-    List<Karte> karten = new ArrayList<>();
+    List<Karte> karten;
     String name;
     
     public Bot(int anzahlKarten, String name) {
-        karten.clear();
+        karten = new ArrayList<>();
         ziehKarten(anzahlKarten);
     }
     
