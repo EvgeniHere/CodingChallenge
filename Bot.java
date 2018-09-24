@@ -39,8 +39,11 @@ public class Bot {
         gelegt = true;
     }
 
-    public boolean wurdeGelegt() {
-         return gelegt;
+    public boolean hatGelegt() {
+         if (gelegt) {
+             gelegt = true;
+             return true;
+         }
     }
     
     public int getKartenAnzahl() {
