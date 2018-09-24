@@ -31,9 +31,9 @@ public class Spiel {
     public void nextTurn(Bot bot) {
         bot.ziehKarte();
         if (bot.equals(eBot)) {
-            eBot.legeKarte(kBot.getKarten());
+            eBot.legeKarte(kBot.getKarten(), Spielfeld.getKarte());
         } else {
-            kBot.legeKarte(eBot.getKarten());
+            kBot.legeKarte(eBot.getKarten(), Spielfeld.getKarte());
         }
 
         if (bot.hatGelegt()) {
