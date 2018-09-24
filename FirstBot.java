@@ -1,15 +1,15 @@
 import java.util.List;
 
 public class FirstBot extends Bot {
-    
+   
     public FirstBot(int anzahlKarten) {
         super(anzahlKarten, "EvgenisBot");
     }
     
-    public void legeKarte(List<Karte> gegnerKarten) {
+    public void legeKarte(List<Karte> gegnerKarten, Karte spielfeldKarte) {
         boolean gelegt = false;
         for (int i = 0; i < karten.size(); i++) {
-            if (karten.get(i).getWert() == Spielfeld.getKarte().getWert() || karten.get(i).getFarbe() == Spielfeld.getKarte().getFarbe())  {
+            if (karten.get(i).getWert() == spielfeldKarte.getWert() || karten.get(i).getFarbe() == spielfeldKarte.getFarbe())  {
                 boolean exist = false;
                 for (int j = 0; j < gegnerKarten.size(); j++) {
                     if (karten.get(i).getWert() != gegnerKarten.get(j).getWert() && karten.get(i).getFarbe() != gegnerKarten.get(j).getFarbe()) {
@@ -29,7 +29,7 @@ public class FirstBot extends Bot {
         
         if (!gelegt) {
             for (int i = 0; i < karten.size(); i++) {
-                if (karten.get(i).getWert() == Spielfeld.getKarte().getWert() || karten.get(i).getFarbe() == Spielfeld.getKarte().getFarbe())  {
+                if (karten.get(i).getWert() == spielfeldKarte.getWert() || karten.get(i).getFarbe() == spielfeldKarte.getFarbe())  {
                     this.legeKarte(i);
                     gelegt = true;
                     break;
