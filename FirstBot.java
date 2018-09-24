@@ -7,42 +7,6 @@ public class FirstBot extends Bot {
     }
     
     public void legeKarte(List<Karte> gegnerKarten, Karte spielfeldKarte) {
-        boolean gelegt = false;
-        for (int i = 0; i < karten.size(); i++) {
-            if (karten.get(i).getWert() == spielfeldKarte.getWert() || karten.get(i).getFarbe() == spielfeldKarte.getFarbe())  {
-                boolean exist = false;
-                for (int j = 0; j < gegnerKarten.size(); j++) {
-                    if (karten.get(i).getWert() != gegnerKarten.get(j).getWert() && karten.get(i).getFarbe() != gegnerKarten.get(j).getFarbe()) {
-                        exist = true;
-                    } else {
-                        exist = false;
-                        break;
-                    }
-                }
-                if (exist) {
-                    this.legeKarte(i);
-                    gelegt = true;
-                    break;
-                }
-            }
-        }
-        
-        if (!gelegt) {
-            for (int i = 0; i < karten.size(); i++) {
-                if (karten.get(i).getWert() == spielfeldKarte.getWert() || karten.get(i).getFarbe() == spielfeldKarte.getFarbe())  {
-                    this.legeKarte(i);
-                    gelegt = true;
-                    break;
-                }
-            }
-            if (!gelegt) {
-                if (Kartenstapel.getAnzahl() > 0) {
-                    this.ziehKarte();
-                } else {
-                    System.out.println("Fuck...");
-                    Spiel.botWin(Spiel.kBot);
-                }
-            }
-        }
+        //place Your Code here (you can find an example in SecondBot.java)
     }
 }
