@@ -6,7 +6,7 @@ public class SecondBot extends Bot {
         super(anzahlKarten, "KauansBot");
     }
     
-    //Mein vorherige Kartenauswahlmethode für den bot. du kannst das löschen
+    //Mein vorherige Kartenauswahlmethode. du kannst den Inhalt der Methode löschen, musst aber den Methodennamen behalten da dieser aufgerufen wird im Verlauf des Spiels.
     public void legeKarte(List<Karte> gegnerKarten, Karte spielfeldKarte) {
         boolean gelegt = false;
         for (int i = 0; i < karten.size(); i++) {
