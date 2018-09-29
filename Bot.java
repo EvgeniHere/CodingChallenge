@@ -4,12 +4,11 @@ import java.util.List;
 public class Bot {
     List<Karte> karten;
     String name;
-    boolean gelegt, verloren;
+    boolean gelegt;
     
     public Bot(int anzahlKarten, String name) {
         karten = new ArrayList<>();
         ziehKarten(anzahlKarten);
-        verloren = false;
     }
     
     public List<Karte> getKarten() {
@@ -20,17 +19,14 @@ public class Bot {
         return name;
     }
     
-    public void ziehKarte() {
+    public boolean ziehKarte() {
         if (Kartenstapel.getAnzahl() > 0) {
             Karte karte = Kartenstapel.karteZiehen();
             karten.add(karte);
+            return true;
         } else {
-            verloren = true;
+            return false;
         }
-    }
-
-    public boolean hatGezogen() {
-        return verloren;
     }
     
     public void ziehKarten(int anzahl) {
