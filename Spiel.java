@@ -37,23 +37,23 @@ public class Spiel {
         }
 
         if (bot.hatGelegt()) {
-            if (!isFinished()) {
-                if (bot.equals(eBot)) {
-                    nextTurn(kBot);
-                } else {
-                    nextTurn(eBot);
+            if (!bot.getKarten().isEmpty()) { //könnte Fehler sein
+                if (!isFinished()) {
+                    if (bot.equals(eBot)) {
+                        nextTurn(kBot);
+                    } else {
+                        nextTurn(eBot);
+                    }
                 }
+            } else {
+                winner = bot;
             }
         }
     }
     
-    public static void botWin(Bot bot) {
-        if (bot.equals(eBot)) {
-            winner = eBot;
-        } else {
-            winner = kBot;
-        }
-    }
+    //public static void botWin(Bot bot) { //könnte Fehler sein
+   //    winner = bot;
+   // }
     
     public boolean isFinished() {
         return winner != null;
