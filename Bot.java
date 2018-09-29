@@ -40,17 +40,18 @@ public class Bot {
     }
     
     public void legeKarte(int num) {
-        CheatProtection.check(this, num);
-        gelegt = true;
+        if (!gelegt) {
+            CheatProtection.check(this, num);
+            gelegt = true;
+        } else {
+            System.out.println("Bot versucht zwei Karten auf einmal zu legen!");
+        }
     }
 
     public boolean hatGelegt() {
-        if (gelegt) {
-            gelegt = false;
-            return true;
-        } else {
-            return false;
-        }
+        boolean gelegtTemp = gelegt;
+        gelegt = false;
+        return gelegtTemp;
     }
     
     public int getKartenAnzahl() {
