@@ -29,6 +29,8 @@ public class Spiel {
     }
     
     public void nextTurn(Bot bot) {
+        System.out.println(bot.getName() + " ist dran:");
+        
         bot.ziehKarte();
         if (bot.equals(eBot)) {
             eBot.legeKarte(kBot.getKarten(), Spielfeld.getKarte());
@@ -36,32 +38,33 @@ public class Spiel {
             kBot.legeKarte(eBot.getKarten(), Spielfeld.getKarte());
         }
 
+        System.out.println("Karte gelegt: " + bot.hatGelegt());
+        
         if (bot.hatGelegt()) {
-            if (!bot.getKarten().isEmpty()) { //könnte Fehler sein
-                //if (!isFinished()) { experimental
-                    if (bot.equals(eBot)) {
-                        nextTurn(kBot);
-                    } else {
-                        nextTurn(eBot);
-                    }
-                //}
+            System.out.println("Noch Karten: " + bot.getKartenAnzahl());
+            if (bot.equals(eBot)) {
+                nextTurn(kBot);
             } else {
-                winner = bot;
+                nextTurn(eBot);
             }
         } else {
             if (!bot.ziehKarte()) {
                 if (bot.equals(eBot)) {
-                       winner = kBot;
+                    winner = kBot;
+                    System.out.println(kBot.getName() + " hat gewonnen! 2");
                 } else {
-                       winner = eBot;
+                    winner = eBot;
+                    System.out.println(eBot.getName() + " hat gewonnen! 2");
+                }
+            } else {
+                if (bot.equals(eBot)) {
+                    nextTurn(kBot);
+                } else {
+                    nextTurn(eBot);
                 }
             }
         }
     }
-    
-    //public static void botWin(Bot bot) { //könnte unnötig sein
-   //    winner = bot;
-   // }
     
     public boolean isFinished() {
         return winner != null;
