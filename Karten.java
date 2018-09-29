@@ -10,7 +10,8 @@ public class Karten {
         System.out.print("Anzahl Karten: ");
         int num = Integer.valueOf(scan.next());
         
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Game " + (i + 1));
             spiel = new Spiel(num); 
             stats.addSpiel(spiel);
         }
