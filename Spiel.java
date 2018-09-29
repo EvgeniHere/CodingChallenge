@@ -38,22 +38,28 @@ public class Spiel {
 
         if (bot.hatGelegt()) {
             if (!bot.getKarten().isEmpty()) { //könnte Fehler sein
-                if (!isFinished()) {
+                //if (!isFinished()) { experimental
                     if (bot.equals(eBot)) {
                         nextTurn(kBot);
                     } else {
                         nextTurn(eBot);
                     }
-                }
+                //}
             } else {
                 winner = bot;
             }
         } else {
-            bot.ziehKarte();
+            if (!bot.ziehKarte()) {
+                if (bot.equals(eBot)) {
+                       winner = kBot;
+                } else {
+                       winner = eBot;
+                }
+            }
         }
     }
     
-    //public static void botWin(Bot bot) { //könnte Fehler sein
+    //public static void botWin(Bot bot) { //könnte unnötig sein
    //    winner = bot;
    // }
     
