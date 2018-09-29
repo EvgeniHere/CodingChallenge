@@ -9,6 +9,7 @@ public class Bot {
     public Bot(int anzahlKarten, String name) {
         karten = new ArrayList<>();
         ziehKarten(anzahlKarten);
+        this.name = name;
     }
     
     public List<Karte> getKarten() {
