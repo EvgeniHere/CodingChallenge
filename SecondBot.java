@@ -10,7 +10,8 @@ public class SecondBot extends Bot {
     public void legeKarte(List<Karte> gegnerKarten, Karte spielfeldKarte) {
         boolean gelegt = false;
         for (int i = 0; i < karten.size(); i++) {
-            boolean exist = false;
+            boolean exist = false; //--> exist ist nach der forschleife true wenn es eine karte gibt auf die der gegner keine antwort hat.
+            //somit muss der gegner danach eine karte ziehen oder er verliert das spiel
             if (karten.get(i).getWert() == spielfeldKarte.getWert() || karten.get(i).getFarbe() == spielfeldKarte.getFarbe())  {
                 for (int j = 0; j < gegnerKarten.size(); j++) {
                     if (karten.get(i).getWert() != gegnerKarten.get(j).getWert() && karten.get(i).getFarbe() != gegnerKarten.get(j).getFarbe()) {
