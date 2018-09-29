@@ -48,6 +48,8 @@ public class Spiel {
             } else {
                 winner = bot;
             }
+        } else {
+            bot.ziehKarte();
         }
     }
     
