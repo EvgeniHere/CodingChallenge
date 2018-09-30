@@ -29,6 +29,7 @@ public class Bot {
             Helper.sort(cards);
             if (drawn) {
                 acceptedDraw = true;
+                drawn = false;
             } else {
                 drawn = true;
             }
@@ -45,7 +46,6 @@ public class Bot {
     public boolean placedOrDrawn() {
         boolean drawnTemp = acceptedDraw;
         boolean placedTemp = placed;
-        drawn = false;
         acceptedDraw = false;
         placed = false;
         return drawnTemp || placedTemp;
