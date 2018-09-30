@@ -47,6 +47,7 @@ public class Bot {
         boolean drawnTemp = acceptedDraw;
         boolean placedTemp = placed;
         acceptedDraw = false;
+        drawn = false;
         placed = false;
         return drawnTemp || placedTemp;
     }
