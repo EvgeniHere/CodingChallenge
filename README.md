@@ -17,7 +17,9 @@ Conditions for writing:
 
 - every card your bot places will be checked by a cheatdetector. Don't get the wrong idea...
 
--PS: you are allowed to have fun while programming :)
+- also: stay tuned for future updates! The program has to be polished some times, so it does continue being able to handle all the new bots.
+
+- PS: you are allowed to have fun while programming :)
             
 General gamerules: 
 
