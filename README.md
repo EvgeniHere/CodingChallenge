@@ -3,6 +3,8 @@ Bots playing Cards
 
 Coding challenge by Kauan Schuani and Evgeni Uschakov: Tournament of bots playing cards. Upload your selfwritten bot to get involved and let him play against other bots. Hope to see you in the ring!
 
+Also join our Discord server for further information and discussions with other competitors! --> https://discord.gg/EQKtmvj
+
 Conditions for writing: 
 
 - Use our generated basic structure of the game
