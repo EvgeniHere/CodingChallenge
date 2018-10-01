@@ -19,7 +19,7 @@ Conditions for writing:
 
 - you are able to change some variables while developing. for example: "waitingTime" in Game.java (it does speed up everything)
 
-- after finishing your bot, upload it to the brach: "Botuploads". To let me know who won, write your username into Firstbot.java. exactly said into the constructor where it says "~FirstBot~"
+- after finishing your bot, upload it to the brach: "Botuploads". To let me know who won, write your username into Firstbot.java. exactly said into the constructor where it says "-FirstBot-"
 
 - also: stay tuned for future updates! The program has to be polished some times, so it does continue being able to handle all the new bots.
 
