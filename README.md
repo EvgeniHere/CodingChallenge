@@ -17,6 +17,8 @@ Conditions for writing:
 
 - every card your bot places will be checked by a cheatdetector. Don't get the wrong idea...
 
+- after finishing your bot, upload it to the brach: "Botuploads". To let me know who won, write your username into Firstbot.java. exactly said into the constructor where it says "~FirstBot~"
+
 - also: stay tuned for future updates! The program has to be polished some times, so it does continue being able to handle all the new bots.
 
 - PS: you are allowed to have fun while programming :)
