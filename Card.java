@@ -27,22 +27,20 @@ public class Card {
     public String getCardClass() {
         switch(cardClass) {
             case 0:
-                return "6";
-            case 1:
                 return "7";
-            case 2:
+            case 1:
                 return "8";
-            case 3:
+            case 2:
                 return "9";
-            case 4:
+            case 3:
                 return "10";
-            case 5:
+            case 4:
                 return "Jack";
-            case 6:
+            case 5:
                 return "Queen";
-            case 7:
+            case 6:
                 return "King";
-            case 8:
+            case 7:
                 return "Ace";
             default:
                 return "null";
