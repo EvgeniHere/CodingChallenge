@@ -44,6 +44,9 @@ public class Bot {
     }
     
     public boolean placedOrDrawn() {
+        if (!acceptedDraw && CardsStack.getAmount() > 0 && drawn && !placed) {
+            drawCard();
+        }
         boolean drawnTemp = acceptedDraw;
         boolean placedTemp = placed;
         acceptedDraw = false;
