@@ -13,7 +13,7 @@ Conditions for writing:
             
 - Your Bot has the ability to see the opponent Cards (opponents cards will be transported to your code as a parameter of the data type List<Karte>)
 
-- You are only allowed to use the methods of your class and the method "this.legeKarte(index);" to place cards
+- You are only allowed to use the methods of your class and the method "this.placeCard(index);" to place cards
 
 - every card your bot places will be checked by a cheatdetector. Don't get the wrong idea...
 
