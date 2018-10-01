@@ -22,8 +22,7 @@ public class SecondBot extends Bot {
                 }
                 if (exist) {
                     this.placeCard(i);
-                    placed = true;
-                    break;
+                    return;
                 }
             }
         }
@@ -32,7 +31,7 @@ public class SecondBot extends Bot {
             for (int i = 0; i < cards.size(); i++) {
                 if (cards.get(i).getValue() == cardFieldCard.getValue() || cards.get(i).getColor() == cardFieldCard.getColor())  {
                     this.placeCard(i);
-                    break;
+                    return;
                 }
             }
         }
