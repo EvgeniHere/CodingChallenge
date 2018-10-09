@@ -1,5 +1,4 @@
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +29,11 @@ class CardsStack {
         int index = 0;
         for (int i = 0; i < cols; i++) {
             for (int j = 0; j < rows; j++){
-                sprites[index] = image.getSubimage(i * (width / 8), j * (height / 4), width / 8, height / 4);
+                if (j+1 != rows) {
+                    sprites[index] = image.getSubimage(i * (width / 8), j * (height / 4) + 2, width / 8, height / 4);
+                } else {
+                    sprites[index] = image.getSubimage(i * (width / 8), j * (height / 4) + 2, width / 8, height / 4 - 2);
+                }
                 index++;
             }
         }
