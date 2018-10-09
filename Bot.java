@@ -5,7 +5,7 @@ public class Bot {
     List<Card> cards;
     String name;
     int amountDrawn;
-    boolean placed, drawn, acceptedDraw; //gelegt, gezogen, gezogen da keine pssende karte auf der hand
+    boolean placed, drawn; //gelegt, gezogen
     
     public Bot(int cardAmount, String name) {
         cards = new ArrayList<>();
@@ -29,15 +29,14 @@ public class Bot {
             cards.add(card);
             Helper.sort(cards);
             Game.repaint();
-            if (drawn) {
-                System.out.println("Second Draw");
-                drawn = false;
-                acceptedDraw = true;
-            } else {
-                System.out.println("First Draw");
+            //if (drawn) {
+            //    System.out.println("Second Draw");
+            //    drawn = false;
+            //    acceptedDraw = true;
+            //} else {
                 drawn = true;
-                acceptedDraw = false;
-            }
+            //    acceptedDraw = false;
+            //}
         }
         System.out.println("    Cards in stack: " + CardsStack.getAmount());
     }
@@ -49,12 +48,12 @@ public class Bot {
     }
     
     public boolean placedOrDrawn() {
-        if (!acceptedDraw && CardsStack.getAmount() > 0 && drawn && !placed) {
+        if (/*!acceptedDraw && */!drawn && !placed) {
             drawCard();
         }
-        boolean drawnTemp = acceptedDraw;
+        boolean drawnTemp = /*acceptedDraw*/ drawn;
         boolean placedTemp = placed;
-        acceptedDraw = false;
+        //acceptedDraw = false;
         drawn = false;
         placed = false;
                 
