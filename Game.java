@@ -11,12 +11,12 @@ public class Game {
     static NewThread t;
     static boolean fBotsTurn = false;
     static boolean pause;
-    static int waitingTime = 2000; //Change this while developing
+    static int waitingTime = 10; //Change this while developing
     
     public Game(int cardAmount) {
         ks = new CardsStack(cardAmount);
-        Game.sBot = new SecondBot(6);
-        Game.fBot = new FirstBot(6);
+        Game.sBot = new SecondBot(10);
+        Game.fBot = new FirstBot(10);
         winner = null;
         System.out.println();
         
@@ -58,7 +58,13 @@ public class Game {
         System.out.println();
         System.out.println(bot.getName() + "´s turn:");
 
-        bot.drawCard();
+        delay();
+        while (isPaused()) {
+            System.out.print("");
+        }
+        delay();
+            
+        //bot.drawCard();
 
         if (bot.equals(fBot)) {
             fBotsTurn = true;
