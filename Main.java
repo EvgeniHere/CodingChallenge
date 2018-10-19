@@ -7,7 +7,7 @@ public class Main {
     static Statistics stats = new Statistics();
     
     public static void main(String[] args) throws IOException {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             game = new Game(32);
             stats.addGame(game);
         }
