@@ -6,7 +6,7 @@ public class SecondBot extends Bot {
         super(cardAmount, "SecondBot");
     }
 
-//My example of a working method for placing cards. you have to use this methodname and the parameters.    
+//My example of a working method for placing cards.    
     public void placeCard(List<Card> opponentCards, Card cardFieldCard) {
         boolean placed = false;
         for (int i = 0; i < cards.size(); i++) {
