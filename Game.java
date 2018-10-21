@@ -11,7 +11,7 @@ public class Game {
     static NewThread t;
     static boolean fBotsTurn = false;
     static boolean pause;
-    static int waitingTime = 5; //Change this while developing
+    static int waitingTime = 1; //Change this while developing
     
     public Game(int cardAmount) {
         ks = new CardsStack(cardAmount);
