@@ -61,22 +61,23 @@ public class MainPanel extends javax.swing.JPanel {
         int moveX = -1;
         int maxCards = 5;
         for (int i = 0; i < cards.size(); i++) {
+            Card currentCard = cards.get(i);
             if (i > maxCards) {
                 maxCards += 6;
-                y += cards.get(i).getImage().getHeight() + 20;
+                y += currentCard.getImage().getHeight() + 20;
                 moveX = -1;
-                distance = y + cards.get(i).getImage().getHeight() + 10;
+                distance = y + currentCard.getImage().getHeight() + 10;
             }
             moveX++;
             
             Color c = g.getColor();
-            if (cards.get(i).getValue() == CardField.getCard().getValue() || cards.get(i).getColor() == CardField.getCard().getColor()) {
+            if (currentCard.getValue() == CardField.getCard().getValue() || currentCard.getColor() == CardField.getCard().getColor()) {
                 g.setColor(Color.YELLOW);
-                g.fillRect(startPosX + moveX * 80 + 4, y - 3, cards.get(i).getImage().getWidth() + 6, cards.get(i).getImage().getHeight() + 6);
+                g.fillRect(startPosX + moveX * 80 + 4, y - 3, currentCard.getImage().getWidth() + 6, currentCard.getImage().getHeight() + 6);
             }
             g.setColor(c);
             
-            g.drawImage(cards.get(i).getImage(), startPosX + moveX * 80 + 7, y, null);
+            g.drawImage(currentCard.getImage(), startPosX + moveX * 80 + 7, y, null);
         }
     }
     
