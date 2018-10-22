@@ -36,3 +36,7 @@ General gamerules:
 - The winner of this game is the bot who has no cards left.
 
 - This game is going to run through a 100 times to identify the better bot, so simple luck cant choose the winner
+
+Tips:
+
+- You dont have to look into the other classes. Write your bot only into "FirstBot.java", change the "waitingTime" variable to something higher in "Game.java" and you are fine.
