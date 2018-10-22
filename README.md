@@ -19,7 +19,7 @@ Conditions for writing:
 
 - You are able to change some variables while developing. for example: "waitingTime" in Game.java (it does speed up everything)
 
-- After finishing your bot, send me your email or username of github as an email to evgeni.uschakov@gmail.com. Than wait for me to allow access to you and upload it to the branch: "Botuploads". To let me know who won, write your username into Firstbot.java. exactly: into the constructor where it says "-FirstBot-"
+- After finishing your bot, send me your email or username of github as an email to evgeni.uschakov@gmail.com. Than wait for me to allow you access and upload it to the branch: "Botuploads". To let me know whos bot won, write your username into "Firstbot.java". exactly: into the constructor where it says "-FirstBot-"
 
 - also: Stay tuned for future updates! The program has to be polished some times, so it does continue being able to handle all the new bots.
 
