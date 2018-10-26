@@ -31,12 +31,10 @@ General gamerules:
 
 - At the beginning every bot gets 15 by default. one card will be placed in the cardfield and the other one gets the beginner bot.
 
-- If you are not able to place a card because you dont have one that fits, the other bot can play the next card.
-
-- The winner of this game is the bot who has no cards left.
+- If you are not able to place a card because you dont have one that fits, you lost this round.
 
 - This game is going to run through a 100 times to identify the better bot, so simple luck cant choose the winner
 
 Tips:
 
-- You dont have to look into the other classes. Write your bot only into "FirstBot.java", change the "waitingTime" variable to something higher in "Game.java" and you are fine.
+- You dont have to look into the other classes. Write only into "FirstBot.java", change the "waitingTime" variable to something higher in "Game.java" and you are fine.
