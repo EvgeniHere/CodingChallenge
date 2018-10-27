@@ -11,7 +11,7 @@ Conditions for writing:
             
 - Upload your single Botclass only (FirstBot.java)
             
-- Your Bot has the ability to see the opponent Cards (opponents cards will be transported to your code as a parameter of the data type List<Karte>)
+- Your Bot has the ability to see the opponent Cards (opponent cards will be transported to your code as a parameter of the data type List<Card>)
 
 - You are only allowed to use the methods of your class and the method "this.placeCard(index);" to place cards
 
